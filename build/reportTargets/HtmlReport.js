@@ -10,7 +10,7 @@ var HtmlReport = /** @class */ (function () {
     }
     HtmlReport.prototype.print = function (report) {
         var html = "\n      <div>\n        <h1>Analysis Output</h1>\n        <div>" + report + "</div>\n      </div>\n    ";
-        fs_1.default.writeFileSync();
+        fs_1.default.writeFileSync('report.html', html);
     };
     return HtmlReport;
 }());

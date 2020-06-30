@@ -10,6 +10,6 @@ export class HtmlReport implements OutputTarget {
       </div>
     `;
 
-		fs.writeFileSync();
+		fs.writeFileSync('report.html', html);
 	}
 }
